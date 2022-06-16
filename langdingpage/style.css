@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+/* /form/ */
+.form-out {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.form-in {
+    width: 60%;
+    margin: auto;
+}
+/* /banner/ */
+.banner {
+    width: 100%;
+    height: 80vh;
+    background-image: url(picture/lexus-is200t-australia-0011-1-029009.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.banner-layer {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.banner-content {
+    width: calc(100%-40%);
+    position: absolute;
+    z-index: 3;
+    left: calc(40%/2);
+    top: 5%;
+}
+.banner-content-logo {
+    width: 80%;
+    text-align: left;
+    color: #059ADC;
+    display: flex;
+}
+.banner-content-logo i {
+    font-size: 30px;
+}
+.banner-content-logo h2 {
+    font-size: 25px;
+    font-weight: 300;
+}
+.banner-content-box {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.banner-content-left {
+    width: 60%;
+    text-align: left;
+    color: white;
+}
+.banner-content-right {
+    width: 30%;
+    height: 350px;
+    background-color: white;
+    border-top: 3px solid #FF5400;
+}
+.banner-content-right form {
+    text-align: center;
+}
+.banner-content-right form input {
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.banner-content-right form h3 {
+    padding: 20px 0 10px 30px;
+    font-size: 16px;
+    color: #FF5400;
+    font-weight: bolder;
+    text-align: left;
+}
+.btn-submit {
+    background-color: #3D3D3D;
+    color: white;
+    font-weight: 700;
+    border: 2px solid #3D3D3D;
+}
+.banner-content-left h1 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.banner-content-left h2{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.banner-content-left p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.banner-content-left button {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #FF5400;
+    border: #FF5400;
+    color: white;
+    padding: 15px 40px;
+    margin-top: 40px;
+}
+/* /OUR PROCESS/ */
+.hr {
+    width: 10%;
+    margin: auto;
+    border: 1px solid #FF5400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.p {
+    width: 55%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.our-process-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+.op-item {
+    width: 23%;
+}
+.op-item h1 {
+    color: #FF5400;
+}
+.op-item h3 {
+    font-weight: 700;
+}
+.op-item p {
+    font-size: 15px;
+}
+.our-process-car {
+    width: 100%;
+}
+.car {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+/* /FEATURED VEHICLES/ */
+.fea-veh {
+    background-color: #F5F5F5;
+}
+.fea-veh-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fea-veh-item {
+    width: 32%;
+    text-align: left;
+    background-color: white;
+    border-bottom: 2px solid #E0E0E0;
+}
+.fea-veh-item-content p, .fea-veh-item-content ul li {
+    font-size: 14px;
+}
+.fea-veh-item-car {
+    width: 100%;
+    height: 180px;
+}
+.fv-item-bg-1, .fv-item-bg-2, .fv-item-bg-3 {
+    width: 100%;
+    height: 180px;
+    background-image: url(picture/01-962892.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fv-item-bg-2 {
+    background-image: url(picture/17.jpg);
+}
+.fv-item-bg-3 {
+    background-image: url(picture/16.jpg);
+}
+.fea-veh-item-content {
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+.fea-veh-item-content ul li::before{
+    content: "\2611";
+    color: #FF5400;
+    font-size: 20px;
+}
+.fea-veh-item-content h4 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.fea-veh-item-content p {
+    padding-bottom: 10px;
+}
+/* /WELCOME TO AUTO SHOWROOM/ */
+.wel-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.wel-item-text {
+    width: 70%;
+}
+.wel-item-text h1, .wel-item-text p {
+    text-align: left;
+}
+.wel-item-text hr {
+    width: 30%;
+    margin-left: 0;
+}
+.wel-item-text p {
+    width: 60%;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.wel-item-form {
+    width: 30%;
+    text-align: right;
+}
+.wel-item-text-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wel-items {
+    width: 50%;
+}
+.wel-item-icon {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+.wel-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 18px;
+    font-size: 25px;
+    background-color: #FF5400;
+}
+.wel-icon a i {
+    color: white;
+}
+.wel-item-icon-text {
+    text-align: left;
+}
+.wel-item-icon-text p {
+    font-size: 11px;
+}
+.wel-item-form input, .wel-item-form textarea{
+    width: 70%;
+    height: 40px;
+    margin-top: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border:1px solid gray;
+}
+.wel-item-form textarea {
+    height: 70px;
+}
+.btn-submit-wel {
+    background-color: #FF5400;
+}
+.wel-item-form button {
+    width: 70%;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #FF5400;
+    border: 1px solid #FF5400;
+    border-radius: 5px;
+    color: white;
+}
+/* /LASTEST VEHICLES ON SALE/ */
+.las-veh {
+    background-color: #F5F5F5;
+}
+.las-veh-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.las-veh-item {
+    width: 32%;
+    text-align: left;
+    background-color: white;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #E0E0E0;
+}
+.las-veh-content {
+    padding: 20px 0 25px 10px;
+}
+.las-veh-content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.lv-item-bg-1 {
+    background-image: url(picture/slide1.jpg);
+}
+.lv-item-bg-2 {
+    background-image: url(picture/15.jpg);
+}
+.lv.item.bg-3 {
+    background-image: url(picture/17.jpg);
+}
+.lv-item-bg-4 {
+    background-image: url(picture/deal_03.jpg);
+}
+.lv-item-bg-5 {
+    background-image: url(picture/17.jpg);
+}
+.lv-item-bg-6 {
+    background-image: url(picture/deal_01.jpg);
+}
+/* / LATEST VEHICLES ON SALE-CEO/ */
+.las-veh-ceo-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.las-veh-ceo-item {
+    width: calc(100%/3);
+}
+.lv-ceo-avatar {
+    width: 100%;
+    height: 150px;
+}
+.avatar-box {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #E0E0E0;
+    margin: auto;
+    background-image: url(picture/563949f5-8c9f-4a52-a211-98ff8a6a10ed.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.avt-dh {
+    background-image: url(picture/fe20a2a1-02ad-4510-a595-064da06f9f09.jpg);
+}
+.avt-hh {
+    background-image: url(picture/fc482f7c-862a-4bac-b181-24c92190b8f0.png);
+}
+.lv-ceo-content{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.lv-ceo-icon {
+    font-size: 30px;
+    color: #FF5400;
+    padding-bottom: 30px;
+}
+.lv-ceo-content p, .lv-ceo-content span {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.star {
+    padding-top: 10px;
+    color: #FEC149;
+}
+/* /SALES/ */
+.sales {
+    background-image: url(picture/car2.jpg);
+    height: 30vh;
+    position: relative;
+    z-index: 1;
+}
+.sales-box {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
+}
+.sales-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sales-layer {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.sales-item {
+    padding-top: 20px;
+}
+.sales-item i {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.sales-item span {
+    font-size: 14px;
+}
+/* /AUTO WORLD MAGAZINE/ */
+.aw-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.aw-item {
+    width: 20%;
+    height: 50px;
+}
+/* /POSTER/ */
+.poster {
+    height: 20vh;
+}
+.poster-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.poster-item-left {
+    background-color: #FF5400;
+    color: white;
+    text-align: right;
+    background-image: url(picture/car31-1.png);
+    background-position: top left;
+    background-size: 60% 80%;
+    background-repeat: no-repeat;
+}
+.poster-item-right {
+    background-color: #3D3D3D;
+    color: white;
+    text-align: left;
+    background-image: url(picture/d5151-car-img1.png);
+    background-position: top right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.poster-box {
+    padding: 70px 10px 50px 10px;
+}
+.poster-item-left p, .poster-item-right p {
+    font-size: 13px;
+}
+.poster-item-left h2 {
+    font-size: 20px;
+    margin-left: 50%;
+}
+.poster-item-right h2 {
+    font-size: 20px;
+    margin-right: 50%;
+}
+.poster-item-left p {
+    font-size: 14px;
+    margin-left: 40%;
+}
+.poster-item-right p {
+    font-size: 14px;
+    margin-right: 40%;
+}
+/* /FOOTER/ */
+.footer {
+    margin-top: 70px;
+    background-color: #232E28;
+}
+.footer-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: white;
+}
+.footer-item-left {
+    width: 40%;
+}
+.footer-item-right {
+    width: 60%;
+}
+.footer-content {
+    margin-top: 50px;
+}
+.footer-content h2 {
+    font-size: 20px;
+}
+.footer-icon {
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+}
+.footer-item-left .banner-content-logo {
+    color: white;
+}
+.footer-item-right hr {
+    border: 1px solid #676F6B;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.footer-email {
+    color: #FAFF00;
+    font-weight: 600;
+    margin-top: 50px;
+}
